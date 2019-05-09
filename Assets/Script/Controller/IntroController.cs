@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
-public class SceneController : MonoBehaviour
+public class IntroController : MonoBehaviour
 {
     public VideoPlayer VideoPlayer;
 
