@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	GameObject panel;
+	//public GameObject panel;
+	//public Animator anim;
 
     public void PlayButton()
     {
-		panel = GameObject.Find("FadeOut");
+		//panel = GameObject.Find("FadePanel");
+		//panel.SetActive(true);
+		//anim = panel.GetComponent("Animator");
 		StartCoroutine(fading());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //diisi "nama level", (build index/ nomor) 1, SceneManager.GetActiveScene().buildIndex + 1
     }
@@ -31,6 +34,6 @@ public class MainMenu : MonoBehaviour
 
 	IEnumerator fading()
 	{
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(3);
 	}
 }
