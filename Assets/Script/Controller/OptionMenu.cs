@@ -8,7 +8,7 @@ public class OptionMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		panel = GameObject.Find("OptionPanel");
+		panel = this.gameObject;
     }
 
     // Update is called once per frame
