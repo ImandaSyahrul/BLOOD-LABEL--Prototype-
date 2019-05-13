@@ -71,4 +71,9 @@ public class OptionMenu : MonoBehaviour
 	{
 		panel.SetActive(false);
 	}
+
+    public void moveScene(string sceneName)
+    {
+        Application.LoadLevel(sceneName);
+    }
 }
