@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prolog.unity
     guid: 6153f15c7ec09af469de58765d569a1c
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 887b7398073c9bb49be56a9c1bcf646b
   m_configObjects: {}
