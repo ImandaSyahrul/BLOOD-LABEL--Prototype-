@@ -24,6 +24,7 @@ public class ZombieController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		//yang ini di aktifin pas nanti udh bikin zombienya 
 		//myRigidbody = GetComponent<Rigidbody2D>;
 
 		timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
