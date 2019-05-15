@@ -10,7 +10,7 @@ public class ZombieController : MonoBehaviour
 
 	public float timeBetweenMove;
 	private float timeBetweenMoveCounter;
-	private float timeToMove;
+	public float timeToMove;
 	private float timeToMoveCounter;
 
 	bool moving;
@@ -30,6 +30,7 @@ public class ZombieController : MonoBehaviour
 		//yang ini di aktifin pas nanti udh bikin zombienya 
 		myRigidbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
+
 		timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
 		timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     }
@@ -46,6 +47,12 @@ public class ZombieController : MonoBehaviour
 				moving = false;
 				timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
 			}
+			anim.SetBool("IsMoving", moving);
+			anim.SetFloat("MoveX", moveDirection.x);
+			anim.SetFloat("MoveY", moveDirection.y);
+			anim.SetFloat("LastMoveX", moveDirection.x);
+			anim.SetFloat("LastMoveY", moveDirection.y);
+
 		} else
 		{
 			timeBetweenMoveCounter -= Time.deltaTime;
@@ -56,11 +63,17 @@ public class ZombieController : MonoBehaviour
 				moving = true;
 				//timeToMoveCounter = timeToMove;
 				timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
-				moveDirection = new Vector3 (Random.Range(-1f, 1f) * moveSpeed, Random.Range(-1f, 1f) * moveSpeed, 0f);
 
-				
+				moveDirection = new Vector3 (Random.Range(-1f, 1f) * moveSpeed, Random.Range(-1f, 1f) * moveSpeed, 0f);
 			}
+			anim.SetBool("IsMoving", moving);
+			anim.SetFloat("MoveX", moveDirection.x);
+			anim.SetFloat("MoveY", moveDirection.y);
+			anim.SetFloat("LastMoveX", moveDirection.x);
+			anim.SetFloat("LastMoveY", moveDirection.y);
 		}
+
+		
 
 		if (reloading)
 		{
@@ -73,11 +86,7 @@ public class ZombieController : MonoBehaviour
 			}
 		}
 
-		anim.SetFloat("MoveX", moveDirection.x);
-		anim.SetFloat("MoveY", moveDirection.y);
-		anim.SetBool("IsMoving", moving);
-		anim.SetFloat("LastMoveX", moveDirection.x);
-		anim.SetFloat("LastMoveY", moveDirection.y);
+		
 	}
 
 	void OnCollisionEnter2D(Collision2D other)

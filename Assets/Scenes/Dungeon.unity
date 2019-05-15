@@ -260,8 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dc3316c95b8214bbc468183bf49b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  timeBetweenMove: 0
+  moveSpeed: 4
+  timeBetweenMove: 2
+  timeToMove: 1
   waitToReload: 0
 --- !u!61 &800009062
 BoxCollider2D:
@@ -384,7 +385,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
