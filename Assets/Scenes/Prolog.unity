@@ -1664,6 +1664,10 @@ GameObject:
   - component: {fileID: 1668345951}
   - component: {fileID: 1668345950}
   - component: {fileID: 1668345949}
+  - component: {fileID: 1668345954}
+  - component: {fileID: 1668345953}
+  - component: {fileID: 1668345952}
+  - component: {fileID: 1668345955}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1727,6 +1731,10 @@ MonoBehaviour:
   - {fileID: 1668345950}
   - {fileID: 1668345951}
   - {fileID: 1668345949}
+  - {fileID: 1668345954}
+  - {fileID: 1668345953}
+  - {fileID: 1668345952}
+  - {fileID: 1668345955}
 --- !u!114 &1668345946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,7 +1762,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1668345945}
   selectedCommands:
-  - {fileID: 1668345951}
+  - {fileID: 1668345955}
   variables: []
   description: 
   stepPause: 0
@@ -1864,6 +1872,117 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   storyText: Untuk mengakses "StoryTest" silakan lewat tangga yang ada di belakangku.
+  description: 
+  character: {fileID: 764690165}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1668345952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668345943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  storyText: Tapi pada hybrid visual novel yang asli. Perpindahan mekanisme permainan
+    akan sering terjadi.
+  description: 
+  character: {fileID: 764690165}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1668345953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668345943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  storyText: Karena prototipe ini bertujuan untuk mengevaluasi hasil rancangan antarmuka
+    yang kami buat. Kami ingin user mendapatkan experience secara full untuk antarmuka
+    pada setiap core-gameplay tanpa terganggu oleh transisi mekanisme permainan.
+  description: 
+  character: {fileID: 764690165}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1668345954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668345943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: Mengapa mekanisme permaian dibuat terpisah, katamu?
+  description: 
+  character: {fileID: 764690165}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1668345955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668345943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  storyText: Jadi... selamat mencoba~
   description: 
   character: {fileID: 764690165}
   portrait: {fileID: 0}
