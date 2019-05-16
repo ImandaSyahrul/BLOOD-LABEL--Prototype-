@@ -40,4 +40,15 @@ public class PlayerController : MonoBehaviour
 		anim.SetFloat("LastMoveX", lastMove.x);
 		anim.SetFloat("LastMoveY", lastMove.y);
 	}
+
+   
+    public void stopPlayer()
+    {
+       anim.gameObject.SetActive(false);
+    }
+
+    public void startPlayer()
+    {
+        anim.gameObject.SetActive(true);
+    }
 }
