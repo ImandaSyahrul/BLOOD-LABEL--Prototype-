@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 	public float moveSpeed;
 	private Animator anim;
+	private Rigidbody2D myRigidbody;
+
 	private bool PlayerMoving;
 	private Vector2 lastMove;
     // Start is called before the first frame update
@@ -13,6 +15,9 @@ public class PlayerController : MonoBehaviour
     {
 		//Get the player animator
 		anim = GetComponent<Animator>();
+		myRigidbody = GetComponent<Rigidbody2D>();
+
+		//DontDestroyOnLoad(transform.gameObject);
     }
 
     // Update is called once per frame

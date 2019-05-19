@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 	public GameObject option;
 	public GameObject fade;
+	public GameObject loadgame;
 	public Animator fadeAnim;
 
 	//public Animator anim;
@@ -15,7 +16,9 @@ public class MainMenu : MonoBehaviour
 	{
 		fade = GameObject.Find("FadePanel");
 		option = GameObject.Find("OptionPanel");
+		loadgame = GameObject.Find("LoadGamePanel");
 		option.SetActive(false);
+		loadgame.SetActive(false);
 		fadeAnim=fade.GetComponent<Animator>();
 	}
 
@@ -29,8 +32,8 @@ public class MainMenu : MonoBehaviour
 
     public void LoadButton()
     {
-
-    }
+		loadgame.SetActive(true);
+	}
 
     public void OptionButton()
     {
