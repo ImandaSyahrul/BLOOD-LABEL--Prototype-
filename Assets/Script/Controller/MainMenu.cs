@@ -14,9 +14,9 @@ public class MainMenu : MonoBehaviour
 
 	private void Start()
 	{
-		fade = GameObject.Find("FadePanel");
-		option = GameObject.Find("OptionPanel");
-		loadgame = GameObject.Find("LoadGamePanel");
+		//fade = GameObject.Find("FadePanel");
+		//option = GameObject.Find("OptionPanel");
+		//loadgame = GameObject.Find("LoadGamePanel");
 		option.SetActive(false);
 		loadgame.SetActive(false);
 		fadeAnim=fade.GetComponent<Animator>();
