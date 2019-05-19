@@ -3951,6 +3951,13 @@ GameObject:
   - component: {fileID: 1374378898}
   - component: {fileID: 1374378897}
   - component: {fileID: 1374378896}
+  - component: {fileID: 1374378902}
+  - component: {fileID: 1374378901}
+  - component: {fileID: 1374378900}
+  - component: {fileID: 1374378899}
+  - component: {fileID: 1374378904}
+  - component: {fileID: 1374378903}
+  - component: {fileID: 1374378905}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4128,7 +4135,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1374378840}
   selectedCommands:
-  - {fileID: 1374378895}
+  - {fileID: 1374378904}
   variables: []
   description: 
   stepPause: 0
@@ -4412,7 +4419,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 278
-    y: 128
+    y: 127
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4457,6 +4464,7 @@ MonoBehaviour:
   - {fileID: 1374378889}
   - {fileID: 1374378887}
   - {fileID: 1374378892}
+  - {fileID: 1374378905}
   - {fileID: 1374378890}
   - {fileID: 1374378896}
   - {fileID: 1374378893}
@@ -4472,6 +4480,12 @@ MonoBehaviour:
   - {fileID: 1374378894}
   - {fileID: 1374378898}
   - {fileID: 1374378895}
+  - {fileID: 1374378902}
+  - {fileID: 1374378901}
+  - {fileID: 1374378900}
+  - {fileID: 1374378899}
+  - {fileID: 1374378903}
+  - {fileID: 1374378904}
 --- !u!114 &1374378841
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4789,7 +4803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: Halo, Anisette
+  storyText: Halo, Anisette.
   description: 
   character: {fileID: 91410449}
   portrait: {fileID: 0}
@@ -5395,8 +5409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 57
   indentLevel: 0
-  storyText: Ia, ia maaf. Tapi ini darurat, pa kepala yang menuruhmu datang. Ditambah
-    lagi barang bawaanmu juga tertinggal di kantor.
+  storyText: 'Ia, ia maaf. Tapi ini darurat, pa kepala yang menuruhmu datang. '
   description: 
   character: {fileID: 91410449}
   portrait: {fileID: 0}
@@ -5893,6 +5906,197 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 1
+--- !u!114 &1374378899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 82
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 815502903}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &1374378900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 0
+  storyText: Baiklah, ayo berangkat.
+  description: 
+  character: {fileID: 1643269790}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1374378901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 80
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1643269790}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: d24ebc5d0acb6cb4a856db3532f792e5, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1488964096}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &1374378902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  storyText: (Hanya ini kemeja yang kupunya. Sepertinya tidak masalah karena sekarang
+    juga sudah bukan jam kerjaku.)
+  description: 
+  character: {fileID: 1643269790}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1374378903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 84
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1643269790}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: e060b53ee278ee446a08b6c4f7662719, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1488964096}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &1374378904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 0
+  storyText: 'Perkenalkan. Aku Anisette Pierson. Aku baru saja diterima di Departemen
+    Kepolisian Kota Bristol dan menjadi polisi termuda '
+  description: 
+  character: {fileID: 1876955324}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1374378905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 0
+  storyText: Ia. Ditambah lagi barang bawaanmu saat training juga tertinggal di kantor.
+  description: 
+  character: {fileID: 91410449}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1387131490
 GameObject:
   m_ObjectHideFlags: 0
