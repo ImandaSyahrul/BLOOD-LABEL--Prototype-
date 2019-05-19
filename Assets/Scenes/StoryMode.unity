@@ -312,7 +312,12 @@ MonoBehaviour:
   nameText: Robert
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 07609279885266f43816d857246284ea, type: 3}
+  - {fileID: 21300000, guid: f76cb4fd101875343b6a96f1b6fa8842, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -2673,7 +2678,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 802916296}
   m_Direction: 2
   m_Value: 0.9999998
-  m_Size: 0.6219855
+  m_Size: 0.6155049
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
