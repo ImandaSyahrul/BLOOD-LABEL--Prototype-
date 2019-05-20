@@ -348,7 +348,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b6e7ed42d12941f4d94cece35f3001e6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b5c28828b57d9a44fa1b219ed32f4560, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -443,9 +443,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 61590026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9cb2d9cdcd52ed44881aa13361b366f, type: 3}
+  m_Script: {fileID: 11500000, guid: e2db7ca92b4f253448e348df0c49f258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Volume: {fileID: 1713119174}
+  myMusic: {fileID: 61590028}
 --- !u!1 &96257244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,7 +1748,7 @@ GameObject:
   - component: {fileID: 381375681}
   - component: {fileID: 381375682}
   m_Layer: 5
-  m_Name: SliderBGM
+  m_Name: SliderSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2259,6 +2261,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1032052822}
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 544020363}
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2973,6 +2986,24 @@ MonoBehaviour:
   Fill: {fileID: 825606025}
   MaxHealthColor: {r: 0, g: 1, b: 0, a: 1}
   MinHealthColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!1 &544020352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519101861401424273, guid: a3916adc5fe77794082d3d16e6945b25,
+    type: 3}
+  m_PrefabInstance: {fileID: 428361643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &544020363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544020352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2d3a7fa98c9f846927cb04ea66ee3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &544677953
 GameObject:
   m_ObjectHideFlags: 0
@@ -7044,6 +7075,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1032052822}
         m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 544020363}
+        m_MethodName: Show
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
