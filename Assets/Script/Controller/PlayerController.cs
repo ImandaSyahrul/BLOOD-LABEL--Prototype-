@@ -87,9 +87,16 @@ public class PlayerController : MonoBehaviour
 
 		if (PlayerMoving == false)
 		{
-			maxStamina++;
-			staminaBar.value = maxStamina;
-			staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
+			while (maxStamina != 100)
+			{
+				maxStamina += 1;
+				staminaBar.value = maxStamina;
+				staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
+			}
+			if (maxStamina > 100)
+			{
+				maxStamina = 100;
+			}
 		}
 
 		anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
@@ -101,7 +108,8 @@ public class PlayerController : MonoBehaviour
 
     public void updateStamina()
     {
-        maxStamina -= staminaLoss * Time.deltaTime;
-        staminaBar.value = maxStamina;
+			maxStamina -= staminaLoss * Time.deltaTime;
+			staminaBar.value = maxStamina;
+		
     }
 }
