@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         //Move the player character
         if ((Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
-			if (maxStamina > 2)
+			if (maxStamina > 13)
 			{
 				maxStamina -= staminaLoss;
 				staminaBar.value = maxStamina;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
         if ((Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
-			if (maxStamina > 2)
+			if (maxStamina > 13)
 			{
 				maxStamina -= staminaLoss;
 				staminaBar.value = maxStamina;
