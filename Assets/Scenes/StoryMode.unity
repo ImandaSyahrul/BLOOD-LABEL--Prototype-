@@ -2932,8 +2932,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 802916297}
   m_HandleRect: {fileID: 802916296}
   m_Direction: 2
-  m_Value: 0.9999998
-  m_Size: 0.6155049
+  m_Value: 1
+  m_Size: 0.61048365
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4226,6 +4226,8 @@ GameObject:
   - component: {fileID: 1374378908}
   - component: {fileID: 1374378907}
   - component: {fileID: 1374378913}
+  - component: {fileID: 1374378915}
+  - component: {fileID: 1374378914}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4400,8 +4402,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1374378840}
+  selectedCommands:
+  - {fileID: 1374378914}
   variables: []
   description: 
   stepPause: 0
@@ -4760,6 +4764,8 @@ MonoBehaviour:
   - {fileID: 1374378909}
   - {fileID: 1374378912}
   - {fileID: 1374378907}
+  - {fileID: 1374378914}
+  - {fileID: 1374378915}
 --- !u!114 &1374378841
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6557,6 +6563,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 93
   indentLevel: 0
+--- !u!114 &1374378914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1643269790}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 3ec27d486da3a5c4f870442d2b79c530, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1488964096}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &1374378915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 94
+  indentLevel: 0
+  storyText: Ya sudahlah, aku harus cepat ke ruang pa kepala agar bisa cepat pulang
+  description: 
+  character: {fileID: 1643269790}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1387131490
 GameObject:
   m_ObjectHideFlags: 0
@@ -6635,7 +6698,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073009289}
   m_HandleRect: {fileID: 2073009288}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7285,6 +7348,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d24ebc5d0acb6cb4a856db3532f792e5, type: 3}
   - {fileID: 21300000, guid: 666ba20fc12751a499fd2cd1a86482c3, type: 3}
   - {fileID: 21300000, guid: 5579d45fc5d76ba419c5d48d17a9bf98, type: 3}
+  - {fileID: 21300000, guid: 0332cdee77841434cba7f27d82af4699, type: 3}
+  - {fileID: 21300000, guid: 3ec27d486da3a5c4f870442d2b79c530, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
