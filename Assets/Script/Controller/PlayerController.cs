@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     //stamina bar
     public float maxStamina;
-    public float staminaLoss = 5;
+    public float staminaLoss = 2;
     public Slider staminaBar;
     public Text staminaStatus;
 
@@ -33,30 +33,37 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMoving = false;
 
+		
         
 
         //Move the player character
-        if ((Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.LeftShift)))
+        if ((Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
-            maxStamina -= staminaLoss;
-            staminaBar.value = maxStamina;
-            staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
-           
-            moveSpeed = 200;
+			if (maxStamina > 2)
+			{
+				maxStamina -= staminaLoss;
+				staminaBar.value = maxStamina;
+				staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
 
-            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+				moveSpeed = 7;
+			}
+			else moveSpeed = 5;
+			transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
             PlayerMoving = true;
             lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
         }
 
-        if ((Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.LeftShift)))
+        if ((Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
-            maxStamina -= staminaLoss;
-            staminaBar.value = maxStamina;
-            staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
-           
-            moveSpeed = 200;
-            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
+			if (maxStamina > 2)
+			{
+				maxStamina -= staminaLoss;
+				staminaBar.value = maxStamina;
+				staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
+				moveSpeed = 7;
+			}
+			else moveSpeed = 5;
+			transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
             PlayerMoving = true;
             lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
         }
@@ -77,9 +84,15 @@ public class PlayerController : MonoBehaviour
             PlayerMoving = true;
             lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
         }
-        
 
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+		if (PlayerMoving == false)
+		{
+			maxStamina++;
+			staminaBar.value = maxStamina;
+			staminaStatus.GetComponent<UnityEngine.UI.Text>().text = maxStamina.ToString();
+		}
+
+		anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         anim.SetBool("Moving", PlayerMoving);
         anim.SetFloat("LastMoveX", lastMove.x);
