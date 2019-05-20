@@ -50,6 +50,7 @@ public class UIManager : MonoBehaviour
 
 	public void ExitToMainmenu()
 	{
+		Resume();
 		SceneManager.LoadScene(1);
 	}
 }
