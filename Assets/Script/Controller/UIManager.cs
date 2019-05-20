@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -45,5 +46,10 @@ public class UIManager : MonoBehaviour
 		Time.timeScale = 1f;
 		gameIsPaused = false;
 		panelHUD.SetActive(true);
+	}
+
+	public void ExitToMainmenu()
+	{
+		SceneManager.LoadScene(1);
 	}
 }
