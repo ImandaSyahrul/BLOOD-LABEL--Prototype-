@@ -163,8 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26a2a9f1c8c2ad4cab2401b297236b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6443448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,10 +621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9cb2d9cdcd52ed44881aa13361b366f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: {fileID: 1713119174}
-  myMusic: {fileID: 61590028}
 --- !u!1 &109595783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,8 +1765,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a26a2a9f1c8c2ad4cab2401b297236b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &382053918
@@ -5517,8 +5509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22932131e7068f41a41c9c854d1879a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &741310096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5883,8 +5873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26a2a9f1c8c2ad4cab2401b297236b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &786581278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5895,8 +5883,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d22932131e7068f41a41c9c854d1879a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &786581279
@@ -6843,7 +6829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelHUD: {fileID: 385000047}
-  pausePanel: {fileID: 0}
+  pausePanel: {fileID: 382053916}
 --- !u!1 &1053208354
 GameObject:
   m_ObjectHideFlags: 0
