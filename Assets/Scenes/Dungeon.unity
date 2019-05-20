@@ -2270,7 +2270,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 544020363}
+      - m_Target: {fileID: 0}
         m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
@@ -2986,24 +2986,6 @@ MonoBehaviour:
   Fill: {fileID: 825606025}
   MaxHealthColor: {r: 0, g: 1, b: 0, a: 1}
   MinHealthColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!1 &544020352 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1519101861401424273, guid: a3916adc5fe77794082d3d16e6945b25,
-    type: 3}
-  m_PrefabInstance: {fileID: 428361643}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &544020363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544020352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2d3a7fa98c9f846927cb04ea66ee3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &544677953
 GameObject:
   m_ObjectHideFlags: 0
@@ -7084,7 +7066,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 544020363}
+      - m_Target: {fileID: 0}
         m_MethodName: Show
         m_Mode: 1
         m_Arguments:
