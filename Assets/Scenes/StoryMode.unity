@@ -4260,6 +4260,8 @@ GameObject:
   - component: {fileID: 1374378899}
   - component: {fileID: 1374378947}
   - component: {fileID: 1374378881}
+  - component: {fileID: 1374378949}
+  - component: {fileID: 1374378948}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4436,8 +4438,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1374378840}
-  selectedCommands:
-  - {fileID: 1374378881}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -4823,6 +4824,8 @@ MonoBehaviour:
   - {fileID: 1374378927}
   - {fileID: 1374378924}
   - {fileID: 1374378923}
+  - {fileID: 1374378948}
+  - {fileID: 1374378949}
   - {fileID: 1374378919}
   - {fileID: 1374378920}
   - {fileID: 1374378921}
@@ -6904,8 +6907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 119
   indentLevel: 0
-  storyText: Sudah kuduga... Lalu, ada apaaa? Tidak mungkinkan hanya mengingatkan
-    barangku yang tertinggal?
+  storyText: Sudah kuduga....
   description: 
   character: {fileID: 1643269790}
   portrait: {fileID: 0}
@@ -7053,10 +7055,10 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1643269790}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 0332cdee77841434cba7f27d82af4699, type: 3}
+  portrait: {fileID: 21300000, guid: b2c6965867b7ba948a6e6752766a7bf3, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
-  toPosition: {fileID: 46035760}
+  toPosition: {fileID: 0}
   facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
@@ -7587,6 +7589,63 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1374378948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 131
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1643269790}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 45d15139ceb117246910badc50db8291, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 46035760}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1374378949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374378823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 130
+  indentLevel: 0
+  storyText: Lalu, ada apaaa? Tidak mungkinkan hanya mengingatkan barangku yang tertinggal?
+  description: 
+  character: {fileID: 1643269790}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1387131490
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,7 +7840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.299991, y: 0.000030517578}
+  m_AnchoredPosition: {x: 14.3000145, y: 0.000030517578}
   m_SizeDelta: {x: -14.299988, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1464489592
@@ -8317,6 +8376,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5579d45fc5d76ba419c5d48d17a9bf98, type: 3}
   - {fileID: 21300000, guid: 0332cdee77841434cba7f27d82af4699, type: 3}
   - {fileID: 21300000, guid: 3ec27d486da3a5c4f870442d2b79c530, type: 3}
+  - {fileID: 21300000, guid: c03bb624046ac174782863283fc78cd3, type: 3}
+  - {fileID: 21300000, guid: 45d15139ceb117246910badc50db8291, type: 3}
+  - {fileID: 21300000, guid: ce9147dfec2afe64c905c7979d6cc1cd, type: 3}
+  - {fileID: 21300000, guid: b2c6965867b7ba948a6e6752766a7bf3, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

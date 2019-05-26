@@ -7,7 +7,7 @@ public class Interact : MonoBehaviour
 {
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (other.gameObject.name == "Player")
+		if (other.gameObject.name == "TriggerPlayer")
 		{
 			if (Input.GetKeyDown(KeyCode.Space)) //tombol yang ditekan untuk interact, sekarang spasi dulu
 			{

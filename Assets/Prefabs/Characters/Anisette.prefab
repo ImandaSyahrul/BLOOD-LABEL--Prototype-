@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &885106647725774637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885106647725774639}
+  - component: {fileID: 885106647725774638}
+  m_Layer: 0
+  m_Name: Anisette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885106647725774639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885106647725774637}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -472.6678, y: 154.21138, z: 0.1865467}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885106647725774638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885106647725774637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Anisette
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: fa6496f4f3b4f0142abdfdfc94b4f823, type: 3}
+  - {fileID: 21300000, guid: 2319c946d58e4564ca7af6cab9e939aa, type: 3}
+  - {fileID: 21300000, guid: 1cda3c02b2655de46bbe08631eeb391b, type: 3}
+  - {fileID: 21300000, guid: 6dce3f2c97e80bd4a8889e1fd91b7658, type: 3}
+  - {fileID: 21300000, guid: ad0ddd3e1b348744b8fed6f57d0361fa, type: 3}
+  - {fileID: 21300000, guid: 107626e71d19b50478526121eb910fd9, type: 3}
+  - {fileID: 21300000, guid: c249ec408a06a8a45bab33beae25fcb3, type: 3}
+  - {fileID: 21300000, guid: e060b53ee278ee446a08b6c4f7662719, type: 3}
+  - {fileID: 21300000, guid: d24ebc5d0acb6cb4a856db3532f792e5, type: 3}
+  - {fileID: 21300000, guid: 666ba20fc12751a499fd2cd1a86482c3, type: 3}
+  - {fileID: 21300000, guid: 5579d45fc5d76ba419c5d48d17a9bf98, type: 3}
+  - {fileID: 21300000, guid: 0332cdee77841434cba7f27d82af4699, type: 3}
+  - {fileID: 21300000, guid: 3ec27d486da3a5c4f870442d2b79c530, type: 3}
+  - {fileID: 21300000, guid: c03bb624046ac174782863283fc78cd3, type: 3}
+  - {fileID: 21300000, guid: 45d15139ceb117246910badc50db8291, type: 3}
+  - {fileID: 21300000, guid: ce9147dfec2afe64c905c7979d6cc1cd, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 

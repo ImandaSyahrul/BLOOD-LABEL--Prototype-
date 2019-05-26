@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ZombieController : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class ZombieController : MonoBehaviour
 		//yang ini di aktifin pas nanti udh bikin zombienya 
 		myRigidbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-
+		reloading = false;
 		timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
 		timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
     }
@@ -94,8 +95,12 @@ public class ZombieController : MonoBehaviour
 		if (other.gameObject.name == "Player")
 		{
 			other.gameObject.SetActive(false);
-			reloading = true;
-			thePlayer = other.gameObject;
+			//thePlayer.SetActive(false);
+			SceneManager.LoadScene(5);
+			//while(Fungus.Flowchart.)
+			//other.gameObject.SetActive(false);
+			//reloading = true;
+			//thePlayer = other.gameObject;
 		}
 	}
 }
